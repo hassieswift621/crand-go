@@ -1,4 +1,4 @@
-package main
+package crand
 
 import (
 	"crypto/rand"
