@@ -7,12 +7,12 @@ import (
 )
 
 const (
-	defaultCharset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+	Charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 )
 
 // String generates a crypto secure random string of length size using the default charset.
 func String(size int) (string, error) {
-	return generate(size, defaultCharset)
+	return generate(size, Charset)
 }
 
 // StringWithCharset generates a crypto secure random string of length size using the specified charset.
